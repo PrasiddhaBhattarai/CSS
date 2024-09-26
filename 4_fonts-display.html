@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="learnig about display, font and text in css"
+    />
+    <meta name="author" content="Prasiddha Bhattarai" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Fonts and Display</title>
+    <style>
+      :root{
+        /* css GLOBAL variable, can be used below */
+        /* but creating a local variable can overwrite them */
+        /* Changing these variables, we can change the theme of website  */
+        --bgcolor1: rgb(107, 12, 12);
+        --bgcolor2: rgb(6, 6, 112);
+        --textcolor: goldenrod;
+
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        height: 8vh;
+        background: rgb(0, 0, 0);
+        color: aliceblue;
+      }
+      .navbar ul li a {
+        color: aliceblue;
+        line-height: 2.5mm;
+        text-decoration: none; /* To remove underline from Home, About, Contact */
+      }
+      .navbar ul li {
+        display: inline-block;
+        margin: 19px 19px;
+        text-transform: capitalize;
+        font-size: 20px;
+      }
+      .lbox {
+        display: inline-block;
+        /* display: none; */
+        /* visibility: hidden; */
+        box-sizing: border-box;
+        width: 50%;
+        height: 87vh;
+        padding: 10px;
+        background: var(--bgcolor1); /* using GLOBAL variable*/
+        color: var(--textcolor);
+      }
+      .rbox {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        height: 87vh;
+        padding: 10px;
+        background: var(--bgcolor2); /* using GLOBAL variable*/
+        --textcolor:antiquewhite;  /* LOCAL variable */
+        color: var(--textcolor);
+        text-shadow:1px 1px 2px black,
+                    0 0 1rem goldenrod,
+                    0 0 0.2rem goldenrod;
+        /* text-shadow: 2px 2px 2px goldenrod; */
+      }
+      .googlefont {
+        box-sizing: border-box;
+        width: 100%;
+        height: 5vh;
+        padding: 9px;
+        background: gray;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+    </div>
+    <div class="lbox">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime sequi
+      voluptatum iusto tempora ex pariatur rem architecto vel, suscipit adipisci
+      vero ab, porro accusamus consectetur. Sequi autem molestias enim ipsam.
+    </div><div class="rbox">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, magnam
+      odio? Magni omnis, harum at nemo magnam consequuntur perferendis commodi
+      illum minima aliquid. Omnis maxime molestiae debitis rem vero esse.
+    </div>
+    <footer class="googlefont">
+      &copy;P.B. This is a footer which has font style imported from google
+      font.
+    </footer>
+  </body>
+</html>

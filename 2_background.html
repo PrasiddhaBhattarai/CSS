@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="leaning basic background properties in css">
+    <meta name="author" name="Prasiddha Bhattarai">
+    <title>Background css</title>
+    <style>
+        *{
+            margin: 5;
+            padding: 5;
+        }
+        .color{
+            color:rgb(18, 102, 10) ;
+            background-color: aqua;
+            position: sticky;
+            top: 0px;
+        }
+        .background{
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: gray;
+            border: 3mm ridge rgba(42, 170, 216, 0.605);
+            background-image: url("mustang.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .plus{
+            width: 700px;
+            height: 400px;
+            background-size: inherit;
+            /* background-position-x: left;
+            background-position-y: bottom; */
+            background-position: bottom center;
+        }
+        .background1{
+            width: 950px;
+            height: 846px;
+            color: rgb(18, 102, 10);
+            border: 3mm ridge rgba(84, 40, 217, 0.546);
+            /* background-image: url(mustang.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed; */
+
+             /* background: #bg-color          #url("")       #bg_repeat    #bg-attachment   #bg-position ; */
+             background: rgb(106, 108, 118) url("mustang.jpeg") no-repeat fixed ;
+             background-size: contain;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            background: grey;
+        }
+        img{
+            height: 400px;
+            width: 400px;
+            /* object-fit is for height width of img and not for container */
+            object-fit: fill; /* By Default */
+            object-fit: contain;
+            object-fit: cover;
+            object-position: center bottom;
+            object-position: 10px 15px; /* moving img 10px from left, 15px from top */
+        }
+    </style>
+</head>
+<body>
+    <marquee class="color" behavior="alternate" direction="right"><h1> 1969 Ford Mustang Boss 429</h1></marquee>
+    <div class="background1">
+        <h1><big>
+            The image of car shown below is the 1969 Ford Mustang Boss 429.<br>
+            It is the same model of mustang used in John Wick movie by the protagonist.<br>
+            It is an vintage muscle car manufactured by Ford Motorsports.<br>
+        </big></h1>
+    </div>
+    <div class="background">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti nam labore nobis, natus ipsum autem ratione perspiciatis tempora explicabo?
+    </div>
+    <br>
+    <div class="background plus">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic vitae laboriosam dignissimos corrupti magnam laborum accusamus, ipsam id, culpa ipsum quasi sapiente, libero placeat soluta? Harum, quas a. Laboriosam non iste accusantium ad deserunt obcaecati hic, odit aliquam veritatis sit nisi explicabo debitis dolor, quasi voluptas reiciendis rem saepe, dolorum natus perferendis? Quasi ipsa doloremque incidunt modi quas. Est officiis natus ab pariatur non doloremque consequatur tenetur error ut neque dicta iusto id magnam accusamus, dolor minus quae aperiam ipsum blanditiis expedita harum veniam quas voluptates. Voluptatem tenetur obcaecati, tempora nihil quasi, vero voluptas ullam rem aperiam distinctio provident accusamus!
+    </div>
+    <hr>
+    <div class="container">
+        <img src="mustang.jpeg" alt="1969 Ford Mustang Boss 429">
+    </div>
+</body>
+</html>

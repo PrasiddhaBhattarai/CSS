@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flexbox 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            padding: 2vh;
+            width: 100vw;
+            height: 8vh;
+            border: 2mm solid rgb(57, 58, 63);
+            border-bottom: none;
+            box-sizing: border-box;
+            background: black;
+            color: aliceblue;  
+            text-align: center;
+            word-spacing: 2vw;
+        }
+        li{
+            display: inline;
+            list-style: square inside;
+            text-transform: capitalize;
+        }
+        .img{
+            width: 100vw;
+            height: 25vh;
+            border: 2mm solid rgb(57, 58, 63);
+            box-sizing: border-box;
+            background: rgb(106, 108, 118) url("mustang.jpeg") repeat-x;
+        }
+        .img3{
+            width: 100vw;
+            height: 67vh;
+            border: 2mm solid rgb(57, 58, 63);
+            border-top: none;
+            box-sizing: border-box;
+            background: black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .imga, .imgb, .imgc{
+            width: 20vw;
+            height: 35vh;
+            border: 2mm solid rgb(57, 58, 63);
+            background: rgb(106, 108, 118) url("mustang.jpeg") no-repeat bottom;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+     <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="img"></div>
+    <div class="img3">
+        <div class="imga"></div>
+        <div class="imgb"></div>
+        <div class="imgc"></div>
+    </div>
+</body>
+</html>

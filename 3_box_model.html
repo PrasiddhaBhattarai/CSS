@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="learning about box model in css html">
+    <meta name="author" content="Prasiddha Bhattarai">
+    <title>Box model</title>
+    <style>
+        *{
+            margin: 0;    /* margin collapse */
+            padding: 0;
+        }
+        ul{
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 5mm;
+            list-style: none;
+            /* list-style-position: inside; */
+        }
+        .box1{
+            /* margin: 10px; */
+            width: 1195px;
+            border: 12px  rgb(227, 85, 85);
+            border-style: solid solid none solid;
+            padding: 5px 5px 5px 20px;
+            color: aliceblue;
+            background: black ;
+            /* box-sizing: border-box; */
+        }
+        .box2{
+            /* margin: 5px; */
+            border: 12px rgb(227, 85, 85);
+            border-style: solid solid none solid;
+            padding: 10px;
+            width: 1200px;
+            height: 500px;
+            color: black;
+            background: skyblue;
+        }
+        .center{
+            width: 1244px;
+            background-color: rgb(227, 85, 85);
+            text-align: center;
+        }
+        .box_sizing{
+            background-color: rgb(227, 85, 85);
+            padding: 20px;
+            border: 1px solid white;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <header class="box1">
+        <ul>
+            <li>home</li>
+            <li>login</li>
+            <li>exit</li>
+        </ul>
+    </header>
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis vero id aperiam nihil aut inventore aliquid, deserunt pariatur iusto dolores quam et beatae tenetur recusandae officiis, architecto accusamus corrupti ipsam asperiores nam quae ut quod impedit? Nemo porro accusantium dicta cum consectetur minima expedita dolores. Dignissimos dicta cumque alias inventore.
+        <div class="box_sizing">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ab?
+        </div>
+    </div>
+    <footer class="center">
+        copyright &copy;Prasiddha
+    </footer>
+</body>
+</html>

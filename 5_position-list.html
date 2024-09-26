@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="learnig the position and list style property in css">
+    <meta name="author" content="Prasiddha Bhattarai">
+    <title>position list</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            position: sticky;
+            top: 0;
+            /* element with higher z index value is displayed on top */
+            z-index: 1;
+        }
+        nav{
+            background: black;
+            color: aliceblue;  
+        }
+        nav ul{
+            list-style: square inside;
+            /* list-style: circle inside url(mustang.jpeg); */
+            text-transform: capitalize;
+        }
+        p{
+            text-align: center;
+        }
+        .container {
+            margin: auto;
+            width: 45vw;
+            min-width: 60vw;
+            height: 45vh;
+            min-height: 300vh;
+            /* max-height: 50vh; */
+            background: rgba(138, 25, 25, 0.674);
+        }
+        .container p{
+            font-size: medium;
+            margin: 0 2vw;
+            padding: 3mm;
+            color: rgb(164, 213, 15);
+        }
+        .stick0{
+            padding: 2vh;
+            height: 4vh;
+            background: rgba(28, 28, 130, 0.856);
+            color: goldenrod;
+            text-align: center;
+            font-size: larger;
+            position: sticky;
+            top: 10vh;
+            z-index: 0;
+        }
+        .notes{
+            margin: 5vh;
+            position: fixed;
+            bottom: 40vh;
+            left: 0;
+            background: rgb(11, 11, 195);
+        }
+        .noteshead{
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+   </header> 
+   <section class="container">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non illum inventore impedit vitae odit esse laborum recusandae nisi.
+    </p>
+    <div class="stick0">
+        You can write notes in this website
+    </div>
+    <span class="notes">
+        <span class="noteshead">
+            My Notes
+        </span>
+        <div class="notesbody">
+            <textarea name="textnotes" id="101" cols="30" rows="10" placeholder="write your notes here"></textarea>
+        </div>
+    </span>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, eligendi totam debitis quos dolorum adipisci autem sequi libero, suscipit accusamus dolorem! Incidunt tempora facilis quisquam in voluptates quasi laboriosam quaerat nisi ipsa enim qui sunt modi blanditiis, magni, rem temporibus natus molestiae voluptas praesentium? Blanditiis, sed a corrupti veniam dolores unde rem hic facere repudiandae quisquam minima sapiente sint molestias aperiam necessitatibus perspiciatis iusto optio quaerat quibusdam accusamus deserunt vitae! Suscipit, nam ipsa. Porro consequuntur enim, quaerat ducimus molestiae autem animi maxime quam unde, inventore fugit, eligendi accusantium officiis repudiandae aspernatur illo cum quos omnis. Optio distinctio molestiae quisquam iste explicabo omnis similique porro placeat quos consectetur magni voluptate nesciunt, deserunt nisi cum? Harum vitae alias cumque in quaerat necessitatibus error excepturi accusamus dolores dicta iure explicabo culpa voluptatum, porro pariatur recusandae doloremque quisquam cupiditate quos ad numquam aliquid velit similique repudiandae. Eaque vero reiciendis magnam tempore nostrum. Mollitia consectetur nulla reiciendis, ex veritatis tenetur esse? Praesentium voluptatibus at animi, soluta alias suscipit. Consectetur sed quis, nesciunt laborum possimus accusamus repudiandae inventore in odio similique. Eum omnis cum excepturi neque in accusantium dolore facere expedita mollitia odio laborum dolorem quae ab laudantium, voluptatibus nihil ea minima ipsam! Expedita praesentium quo incidunt est corrupti sunt animi sint earum adipisci officiis, fugit maiores nostrum ut non. Suscipit assumenda quisquam quae harum libero saepe rem, corporis commodi delectus tenetur natus similique at, culpa accusantium veniam aliquid quis quas, sequi sed consequuntur. Et, ex maxime. Repellat, eveniet! Maiores dolore iusto ab molestiae dolores libero est vel obcaecati culpa quidem at, dignissimos laborum sequi! Excepturi labore, repudiandae molestiae temporibus ipsam similique rerum omnis saepe, tenetur, illum reiciendis laboriosam ex consequatur unde. Odio repellendus corrupti veritatis deserunt consequuntur voluptatibus, ad quae quisquam beatae ab explicabo in, nostrum eaque nulla! Nemo tenetur iusto earum dicta, aut vel alias voluptas, deserunt officia facere accusantium, cumque iste pariatur a. Consectetur maxime similique, qui magnam pariatur consequatur. Asperiores accusamus dolores natus maxime molestias quas, ipsa repellendus reprehenderit labore temporibus! Id voluptatibus nesciunt nobis officiis magni animi impedit sapiente assumenda deserunt ratione facere sunt iusto ullam commodi suscipit optio unde amet aperiam dolorem cupiditate quisquam, eius reprehenderit laborum laudantium! Non, assumenda suscipit, omnis dicta alias maxime et repellendus vero quia quisquam mollitia. Tenetur doloribus assumenda rerum, praesentium ducimus quas. Quas nobis similique recusandae ducimus necessitatibus animi, tenetur cumque inventore impedit natus dicta, eius voluptatem voluptatum. Numquam minima, autem distinctio vero est atque nisi sequi, fugiat ducimus illum quidem ea quod expedita possimus debitis at sunt voluptatem vel soluta quae temporibus ipsa fuga perspiciatis. Omnis nesciunt perspiciatis dolores rerum dicta sunt vel praesentium nemo porro. Dolorem, voluptas quod tenetur illum reiciendis, ratione officiis culpa quasi possimus eaque necessitatibus aliquam incidunt. Corporis soluta dolores ut consequuntur quas perspiciatis necessitatibus. Enim placeat modi fuga animi consectetur, ex, architecto neque laborum dolor amet sequi doloremque, quis fugit. Architecto, perferendis dolorum quidem consequatur autem saepe repellendus deserunt pariatur esse laudantium? Debitis, aliquam rerum repudiandae minus, amet possimus quis quae voluptatibus maxime assumenda omnis porro, ex ipsam!
+    </p>
+   </section>
+</body>
+</html>

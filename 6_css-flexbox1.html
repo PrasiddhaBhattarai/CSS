@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="this is about basic flexbox">
+    <meta name="aurthor" content="Prasiddha Bhattarai">
+    <title>CSS flexbox1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;     
+        }
+        .one{
+            height: 50vh;
+            background: aquamarine;
+        }
+        .boxa{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(255, 0, 0);
+            float: left;
+        }
+        .boxb{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(243, 4, 4);
+            float: right;
+            clear: both;
+        }
+        .boxc{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(231, 9, 9);
+            float: right;
+            clear: both;
+        }
+
+        .two{
+            padding: 5px;
+            height: 50vh;
+            background: aqua;
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            /* for main axis:*/
+            justify-content: center;    
+            align-items: center;
+            /* removes gap in cross axis in flex wrap*/
+            align-content: center;  
+        }
+        .box1{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(32, 114, 162);
+            /* intially order is 0 */
+            order: 1;
+            /* use max width or no width for flex grow or shrik, and apply to all items */
+            /* Here box 1 is twice the width than other boxes */
+            /* flex-grow: 2; */
+        }
+        .box2{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(32, 114, 162);
+            /* flex-grow: 1; */
+            /* to use align-self, align-contents must be absent */
+            /* align-self: flex-start; */
+        }
+        .box3{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(32, 114, 162);
+            /* flex-grow: 1; */
+        }
+        .box4{
+            width: 15vw;
+            height: 15vh;
+            border: 1mm solid black;
+            background: rgb(32, 114, 162);
+            order: 2;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+<body>
+    <section class="one">
+        <div class="boxa">Boxa</div>
+        <div class="boxb">Boxb</div>
+        <div class="boxc">Boxc</div>
+    </section>
+    <hr>
+    <section class="two">
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+        <div class="box3">Box3</div>
+        <div class="box4">Box4</div>
+    </section>
+</body>
+</html>
